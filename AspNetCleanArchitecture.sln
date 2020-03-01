@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCleanArch.Application", "AspNetCleanArch.Application", "{C6542748-DA3B-45BC-BE75-A501039FEF6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCleanArch.Domain", "AspNetCleanArch.Domain", "{43E44A65-3374-4764-9BF0-B062386F8A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCleanArch.Infrastructure", "AspNetCleanArch.Infrastructure", "{56EAB48E-2045-44D0-B257-F54B502CE33F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCleanArch.Infrastructure.IoC", "AspNetCleanArch.Infrastructure.IoC", "{F971AF2C-A464-4FAD-A63E-F5ED1AB82AD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCleanArch.Presentation", "AspNetCleanArch.Presentation", "{4571BAA5-B535-4252-81FF-3A9DB7A1D0AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{7643EFEC-7843-4D92-99C8-08FB1C439ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7643EFEC-7843-4D92-99C8-08FB1C439ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7643EFEC-7843-4D92-99C8-08FB1C439ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7643EFEC-7843-4D92-99C8-08FB1C439ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7643EFEC-7843-4D92-99C8-08FB1C439ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7643EFEC-7843-4D92-99C8-08FB1C439ACD} = {43E44A65-3374-4764-9BF0-B062386F8A3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A95B336-2CE8-4BDE-AD0E-ED656C1A5934}
+	EndGlobalSection
+EndGlobal
