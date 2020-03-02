@@ -6,12 +6,12 @@ using System.Text;
 
 namespace CleanArch.Infrastructure.Data.Context
 {
-    class UniversityDbContext : DbContext
+    public class UniversityDbContext : DbContext
     {
-        public UniversityDbContext(DbContextOptions options) : base(options)
+        public UniversityDbContext(DbContextOptions<UniversityDbContext> options) : base(options)
         {
         }
 
-        DbSet<Course> Courses { get; set; }
+       public DbSet<Course> Courses { get; set; }
     }
 }
