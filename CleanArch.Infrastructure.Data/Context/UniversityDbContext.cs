@@ -8,7 +8,7 @@ namespace CleanArch.Infrastructure.Data.Context
 {
     class UniversityDbContext : DbContext
     {
-        public UniversityDbContext(DbContextOptions<UniversityDbContext> options) : base(options)
+        public UniversityDbContext(DbContextOptions options) : base(options)
         {
         }
 

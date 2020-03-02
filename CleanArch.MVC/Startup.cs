@@ -11,8 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using CleanArch.MVC.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-
+using Microsoft.Extensions.Hosting; 
 namespace CleanArch.MVC
 {
     public class Startup
@@ -31,7 +30,7 @@ namespace CleanArch.MVC
                 options.UseSqlServer(
                     Configuration.GetConnectionString("CleanArchIdentityDbConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>(); 
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
