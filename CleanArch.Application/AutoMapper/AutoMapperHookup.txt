@@ -1,0 +1,12 @@
+﻿To use automapper.
+1. Create a class that inherites from the AutoMapper Profile class (This is known as creating a profile)
+	1a. The profile class should be named appropriately to depict which objects are being mapped.
+
+2. Map the objects the constructor of the profile class using the CreateMap<ObjFrom, ObjTo>().
+
+3. Create a configuration class to register all the profile classes created
+	3a. This is done by creating a static MapperConfiguration method and registering the profiles.
+
+Code Refactor.
+To use auto mapper to refactor code,
+just inject the IMapper interface into the class and use the instance to Map<ObjTo>(ObjFrom);

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CleanArch.APi.Configuration;
 using CleanArch.Infra.InversionOfControl;
 using CleanArch.Infrastructure.Data.Context;
 using MediatR;
@@ -43,6 +44,7 @@ namespace CleanArch.Api
                     Version = "V1"
                 });
             });
+            services.RegisterAutoMapper();
             RegisterServices(services);
         }
 

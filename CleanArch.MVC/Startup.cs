@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using CleanArch.Infrastructure.Data.Context;
 using CleanArch.Infra.InversionOfControl;
 using MediatR;
+using CleanArch.MVC.Configuration;
 
 namespace CleanArch.MVC
 {
@@ -43,6 +44,7 @@ namespace CleanArch.MVC
             services.AddControllersWithViews();
             services.AddMediatR(typeof(Startup));
             services.AddRazorPages();
+            services.RegisterAutoMapper();
             RegisterServices(services);
         }
 
