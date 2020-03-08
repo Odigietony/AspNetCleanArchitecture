@@ -34,6 +34,7 @@ namespace CleanArch.MVC
                     Configuration.GetConnectionString("CleanArchIdentityDbConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddDbContext<UniversityDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("CleanArchUniversityDbConnection"));

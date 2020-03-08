@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArch.Infra.InversionOfControl\CleanArch.Infra.InversionOfControl.csproj" />
-    <ProjectReference Include="..\CleanArch.Infrastructure.Data\CleanArch.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 </Project>
