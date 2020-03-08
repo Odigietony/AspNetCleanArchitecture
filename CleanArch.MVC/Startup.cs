@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CleanArch.Infrastructure.Data.Context;
 using CleanArch.Infra.InversionOfControl;
+using MediatR;
 
 namespace CleanArch.MVC
 {
@@ -32,7 +33,7 @@ namespace CleanArch.MVC
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("CleanArchIdentityDbConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true) 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddDbContext<UniversityDbContext>(options =>
@@ -40,6 +41,7 @@ namespace CleanArch.MVC
                 options.UseSqlServer(Configuration.GetConnectionString("CleanArchUniversityDbConnection"));
             });
             services.AddControllersWithViews();
+            services.AddMediatR(typeof(Startup));
             services.AddRazorPages();
             RegisterServices(services);
         }
